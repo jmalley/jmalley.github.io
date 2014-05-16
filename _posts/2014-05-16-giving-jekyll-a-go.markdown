@@ -9,9 +9,8 @@ I wouldn't call myself a *slow* learner, but let's just say I won't be getting a
 
 Enter github pages and the [Jekyll blogging framework][jekyll]. Switching to this method has the added benefit of teaching me something while I blog. Knowing [markdown][markdown] seems to be important, particularly in the github community, and forcing myself to use [Sass][sass] here as i develop the layout is a skill that will help me at work. Perhaps most importantly, I am now going to be using git everyday, which seems like the best way to get comfortable with it.
 
-{% highlight ruby %}
-def begin
-	puts "Off we go."
+{% highlight ruby %}def begin
+  puts "Off we go."
 end
 {% endhighlight %}
 
