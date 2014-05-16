@@ -1,11 +1,12 @@
 ---
 layout: page
-title: About
+title: About Myself
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I'm an entrepreneur and front-end developer, currently working on my [third company][company]. I've embarked on a mission to learn back-end development to ensure my stack is as full as the next guy's. Currently enrolled in [General Assembly's][ga] back end web development course in NYC, I'm using Jekyll and Github Pages to record revelations, epiphanies, and other notes for future reference.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Thanks for stopping by!
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+[company]: http://beneship.com
+[ga]: 		 https://generalassemb.ly
