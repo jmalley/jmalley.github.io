@@ -1,9 +1,0 @@
-# Site settings
-title: Half-Stack Development
-description: "I chronicle my learning of Ruby and Rails, mostly for myself."
-baseurl: ""
-url: "http://jmalley.github.io"
-
-# Build settings
-markdown: kramdown
-permalink: pretty
