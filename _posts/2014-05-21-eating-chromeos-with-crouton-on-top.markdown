@@ -5,7 +5,7 @@ date:   2014-05-21
 categories: dev-environment tweaks
 ---
 
-I loved my 17" MPB for many years, but it is not practical to lug everywhere you go in the summer if you value your spine. As luck would have it, I have recently come to posess a [ChromeBook Pixel][pixel]- a ridiculously pretty hunk of relatively decent hardware topped with a high-resolution capacitive touch display. 
+I have loved my 17" MPB for many years, but it is not practical to lug everywhere you go in the summer if you value your spine. As luck would have it, I have recently come to posess a [ChromeBook Pixel][pixel]- a ridiculously pretty hunk of relatively decent hardware topped with a high-resolution capacitive touch display. 
 
 ![The Pixel is Very Pretty]({{site.url}}/assets/pixel_large.jpg)
 
