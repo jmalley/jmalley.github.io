@@ -17,7 +17,12 @@ Admittedly, it took nearly 6 hours for me to set up the damn thing to work with 
 
 * Distro: Trusty. At the time of this writing it is the latest distro that crouton supports
 * Desktop environment: [KDE][kde-desktop]. This guy was the only one I could find that looks half-way decent on the Pixel.
-* I had to create a startup script that sets the resolution to 1680x1120 because otherwise everything is far too tiny to see.
+* I had to create a startup script that sets the resolution to 1680x1120 because otherwise everything is far too tiny to see. This is actually courtesy of crouton:
+
+{% highlight ruby %}
+	setres 1680 1120
+{% endhighlight %}
+
 * Font DPI is set to 124, and all system font sizes to 8 or 9.
 
 All in all its a little fiddly. Part of me is worried we will need to do something in class that is simply not supported in this kind of environment, but so far so good.
