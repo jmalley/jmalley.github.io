@@ -40,7 +40,7 @@ article.excerpt{
   margin-top: 15px;
 }
 
-article.post-content p:first-letter {
+article.post-content p:first-child:first-letter {
     text-transform: uppercase;
     font-size: 42px;
     font-style: italic;
