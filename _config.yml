@@ -8,4 +8,5 @@ url: "http://jmalley.github.io"
 # Build settings
 markdown: kramdown
 permalink: pretty
+destination: ./published_site
 
