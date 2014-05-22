@@ -6,7 +6,7 @@ categories: dev-environment tweaks
 ---
 
 I have loved my 17" MPB for many years, but it is not practical to lug everywhere you go in the summer if you value your spine. As luck would have it, I have recently come to posess a [ChromeBook Pixel][pixel]- a ridiculously pretty hunk of relatively decent hardware topped with a high-resolution capacitive touch display. 
-<!-- more -->
+<!--more-->
 ![The Pixel is Very Pretty]({{site.url}}/assets/pixel_large.jpg)
 
 There are a *lot* of [haters][hater]. The Chrome OS is a relatively young system, with an interface that is delightfully simple for non-technical folk and perhaps disturbingly simple and locked-down for the more tech-inclined. Personally, I would be fine using it primarily as a web app and general surfing machine, were it not for the fact that I am taking this Back End Web Development class. Thankfully, there are a few methods for running linux on a ChromeBook, most of them created by Google employees.
