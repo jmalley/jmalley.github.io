@@ -1,4 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+---
+layout: default
+---
+
+<div class="home">
+=======
+>>>>>>> source
 <!DOCTYPE html>
 <html>
 
@@ -53,6 +62,7 @@
     <div class="page-content">
       <div class="wrap">
       <div class="home">
+<<<<<<< HEAD
 =======
 ---
 layout: default
@@ -60,11 +70,34 @@ layout: default
 
 <div class="home">
 >>>>>>> source
+=======
+>>>>>>> 4a4fc466fc255c641a30e4a7857d8104b122bed6
+>>>>>>> source
 
   <h1>Posts</h1>
 
   <ul class="posts">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        {% if post.content contains '<!--more-->' %}
+          {{ post.content | split:'<!--more-->' | first }}
+        {% else %}
+        <!-- Case for when no excerpt is defined -->
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
+=======
+>>>>>>> source
     
       <li>
         <span class="post-date">May 22, 2014</span>
@@ -164,6 +197,7 @@ layout: default
 
     </body>
 </html>
+<<<<<<< HEAD
 =======
     {% for post in site.posts %}
       <li>
@@ -181,4 +215,7 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
+>>>>>>> source
+=======
+>>>>>>> 4a4fc466fc255c641a30e4a7857d8104b122bed6
 >>>>>>> source
