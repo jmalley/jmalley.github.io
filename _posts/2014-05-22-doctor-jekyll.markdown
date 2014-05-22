@@ -9,25 +9,13 @@ I really appreciate the theory behind [Jekyll][jekyll]. Rather than have to cont
 
 <!-- more -->
 
-The only issue I've had is understanding a smooth and consistent workflow. I'm using Github Pages, which basically wants to find all the site files in the *master* branch. To acheive this, I do all my editing and writing on a seperate branch called *source*. When I am ready to update the site:
+The only issue I've had is understanding a smooth and consistent workflow. I'm using Github Pages, which basically wants to find all the site files in the *master* branch. To acheive this, I do all my editing and writing on a seperate branch called *source*, where the Jekyll engine lives. Then when it's time to publish changes, jekyll builds a static site and that gets sent to the master branch. This workflow took be a while to figure out, even after reading [a well-written explanation][deploy_steps], and emailing the author of said explanation, David Ensinger. Following his setup, when I am ready to commit my changes I do:
 
 {% highlight ruby %}
-$ jekyll build
-$ git add --all
-$ git commit -m "I've made great changes."
-$ publish_website
+rake commit_deploy
 {% endhighlight %}
 
-That last little nugget is an alias I set up in .bashrc that fires off the following commands I [found online][deploy_steps] (it took me far too long to figure out I couldn't chain together commands in gitconfig, and that this is the proper place to do it):
-
-{% highlight ruby %}
-
-alias publish_website="git push; git branch -D master; git checkout -b master; git filter-branch --subdirectory-filter _site/ -f; git checkout source; git push --all origin --force"
-
-{% endhighlight ruby %}
-
-The gist of it is that we want the master to contain the site files, while we want source to contain the jekyll engine and everything else. Is it *perfect*? No. The important thing is it works for now. In the future I will try to set up a [rakefile for this][rakefile], but I'd like the wait until I know what a rakefile is.
-
+...which points to a rakefile that adds all untracked files and commits them with a timestamp, and then publishes the whole shebang. Ensinger's [rakefile][rakefile] is particularly nifty as it minifies the jekyll build that gets sent to the master branch. I haven't gotten that far yet..
 
 [jekyll]:    http://jekyllrb.com
 [deploy_steps]: http://davidensinger.com/2013/04/deploying-jekyll-to-github-pages/
