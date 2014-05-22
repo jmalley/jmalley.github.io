@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 layout: none
 ---
@@ -17,5 +18,63 @@ layout: none
         <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
       </item>
     {% endfor %}
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Half-Stack Development</title>
+    <description>A comprehensive and obsessively-updated chronicle of my diminishing ignorance in web development.</description>
+    <link>http://jmalley.github.io/</link>
+    <atom:link href="http://jmalley.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Eating Chrome OS with Crouton on Top</title>
+        <description>&lt;p&gt;I have loved my 17” MPB for many years, but it is not practical to lug everywhere you go in the summer if you value your spine. As luck would have it, I have recently come to posess a &lt;a href=&quot;http://www.google.com/intl/en-US/chrome/devices/chromebook-pixel/&quot;&gt;ChromeBook Pixel&lt;/a&gt;- a ridiculously pretty hunk of relatively decent hardware topped with a high-resolution capacitive touch display. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://jmalley.github.io/assets/pixel_large.jpg&quot; alt=&quot;The Pixel is Very Pretty&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are a lot of &lt;a href=&quot;http://gizmodo.com/5986031/every-reason-not-to-buy-the-google-chromebook-pixel&quot;&gt;haters&lt;/a&gt;. The Chrome OS is a relatively young system, with an interface that is delightfully simple for non-technical folk and perhaps disturbingly simple and locked-down for the more tech-inclined. Personally, I would be fine using it primarily as a web app and general surfing machine, were it not for the fact that I am taking this Back End Web Development class. Thankfully, there are a few methods for running linux on a ChromeBook, most of them created by Google employees.&lt;/p&gt;
+
+&lt;p&gt;Because I’m a total noob, I opted for what most people online consider to be the simplest option: &lt;a href=&quot;https://github.com/dnschneid/crouton&quot;&gt;Crouton&lt;/a&gt;. Rather than having to contend with some dual-boot malarky, crouton takes an ubuntu distro and nestles it adorably on top of the Chrome OS kernel, allowing 1-second switching between each OS. &lt;/p&gt;
+
+&lt;p&gt;Admittedly, it took nearly 6 hours for me to set up the damn thing to work with the Pixel’s insanely high-res display, mostly due to me being new to ubuntu, but also because ubuntu support for high-res is spotty. I ended up going with this configuration:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Distro: Trusty. At the time of this writing it is the latest distro that crouton supports&lt;/li&gt;
+  &lt;li&gt;Desktop environment: &lt;a href=&quot;http://www.kubuntu.org/&quot;&gt;KDE&lt;/a&gt;. This guy was the only one I could find that looks half-way decent on the Pixel.&lt;/li&gt;
+  &lt;li&gt;I had to create a startup script that sets the resolution to 1680x1120 because otherwise everything is far too tiny to see. This is actually courtesy of crouton:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;setres&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1680&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1120&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Font DPI is set to 124, and all system font sizes to 8 or 9.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All in all its a little fiddly. Part of me is worried we will need to do something in class that is simply not supported in this kind of environment, but so far so good.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 21 May 2014 00:00:00 -0400</pubDate>
+        <link>http://jmalley.github.io/dev-environment/tweaks/2014/05/21/eating-chromeos-with-crouton-on-top/</link>
+        <guid isPermaLink="true">http://jmalley.github.io/dev-environment/tweaks/2014/05/21/eating-chromeos-with-crouton-on-top/</guid>
+      </item>
+    
+      <item>
+        <title>Giving Jekyll a Go!</title>
+        <description>&lt;p&gt;I wouldn’t call myself a &lt;em&gt;slow&lt;/em&gt; learner, but let’s just say I won’t be getting any speeding tickets on Skill Aquisition Highway. To help facilitate my education, I am forcing myself to blog about everything that I learn that is even remotely useful to me. While this effort began on tumblr, I found that my tumblr friends are not the right audience for endless techical epiphanies. They just can’t compete with the deluge of “heh”-inducing gifs.&lt;/p&gt;
+
+&lt;p&gt;Enter github pages and the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll blogging framework&lt;/a&gt;. Switching to this method has the added benefit of teaching me something while I blog. Knowing &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;markdown&lt;/a&gt; seems to be important, particularly in the github community, and forcing myself to use &lt;a href=&quot;http://sass-lang.com/&quot;&gt;Sass&lt;/a&gt; here as i develop the layout is a skill that will help me at work. Perhaps most importantly, I am now going to be using git everyday, which seems like the best way to get comfortable with it.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;begin&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Off we go.&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Fri, 16 May 2014 10:16:16 -0400</pubDate>
+        <link>http://jmalley.github.io/jekyll/meta/2014/05/16/giving-jekyll-a-go/</link>
+        <guid isPermaLink="true">http://jmalley.github.io/jekyll/meta/2014/05/16/giving-jekyll-a-go/</guid>
+      </item>
+    
+>>>>>>> 5f81dee39bfa46eb1ae5f52e8188ff723330a3b4
   </channel>
 </rss>
