@@ -4,6 +4,7 @@ email: ""
 description: "A comprehensive and obsessively-updated chronicle of my diminishing ignorance in web development."
 baseurl: 
 url: "http://jmalley.github.io"
+excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown
