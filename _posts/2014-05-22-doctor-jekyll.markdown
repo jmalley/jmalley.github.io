@@ -15,7 +15,7 @@ The only issue I've had is understanding a smooth and consistent workflow. I'm u
 rake commit_deploy
 {% endhighlight %}
 
-...which points to a rakefile that adds all untracked files and commits them with a timestamp, and then publishes the whole shebang. Ensinger's [rakefile][rakefile] is particularly nifty as it minifies the jekyll build that gets sent to the master branch. I haven't gotten that far yet..
+...which points to a rakefile that adds all untracked files and commits them with a timestamp, and then publishes the whole shebang. Ensinger's [rakefile][rakefile] is particularly nifty as it minifies the jekyll build that gets sent to the master branch. I haven't gotten that far yet...
 
 [jekyll]:    http://jekyllrb.com
 [deploy_steps]: http://davidensinger.com/2013/04/deploying-jekyll-to-github-pages/
