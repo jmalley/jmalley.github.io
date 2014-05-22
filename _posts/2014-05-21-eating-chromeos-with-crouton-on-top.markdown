@@ -6,7 +6,7 @@ categories: dev-environment tweaks
 ---
 
 I have loved my 17" MPB for many years, but it is not practical to lug everywhere you go in the summer if you value your spine. As luck would have it, I have recently come to posess a [ChromeBook Pixel][pixel]- a ridiculously pretty hunk of relatively decent hardware topped with a high-resolution capacitive touch display. 
-
+<!-- more -->
 ![The Pixel is Very Pretty]({{site.url}}/assets/pixel_large.jpg)
 
 There are a lot of [haters][hater]. The Chrome OS is a relatively young system, with an interface that is delightfully simple for non-technical folk and perhaps disturbingly simple and locked-down for the more tech-inclined. Personally, I would be fine using it primarily as a web app and general surfing machine, were it not for the fact that I am taking this Back End Web Development class. Thankfully, there are a few methods for running linux on a ChromeBook, most of them created by Google employees.
@@ -25,7 +25,7 @@ Admittedly, it took nearly 6 hours for me to set up the damn thing to work with 
 
 * Font DPI is set to 124, and all system font sizes to 8 or 9.
 
-All in all its a little fiddly. Part of me is worried we will need to do something in class that is simply not supported in this kind of environment, but so far so good.
+All in all it's a little fiddly. Part of me is worried we will need to do something in class that is simply not supported in this kind of environment. In the meantime, everything looks pretty damn good on this screen.
 
 [pixel]: http://www.google.com/intl/en-US/chrome/devices/chromebook-pixel/
 [hater]: http://gizmodo.com/5986031/every-reason-not-to-buy-the-google-chromebook-pixel
