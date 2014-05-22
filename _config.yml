@@ -1,0 +1,11 @@
+# Site settings
+title: Half-Stack Development
+email: ""
+description: "A comprehensive and obsessively-updated chronicle of my diminishing ignorance in web development."
+baseurl: 
+url: "http://jmalley.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+

@@ -1,14 +1,13 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Half-Stack Development</title>
+    <title>Eating Chrome OS with Crouton on Top</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="A comprehensive and obsessively-updated chronicle of my diminishing ignorance in web development.">
-    <link rel="canonical" href="http://jmalley.github.io/">
+    <link rel="canonical" href="http://jmalley.github.io/dev-environment/tweaks/2014/05/21/eating-chromeos-with-crouton-on-top/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -52,50 +51,42 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div class="home">
-=======
----
-layout: default
----
+      <div class="post">
 
-<div class="home">
->>>>>>> source
+  <header class="post-header">
+    <h1>Eating Chrome OS with Crouton on Top</h1>
+    <p class="meta">May 21, 2014</p>
+  </header>
 
-  <h1>Posts</h1>
+  <article class="post-content">
+  <p>I have loved my 17” MPB for many years, but it is not practical to lug everywhere you go in the summer if you value your spine. As luck would have it, I have recently come to posess a <a href="http://www.google.com/intl/en-US/chrome/devices/chromebook-pixel/">ChromeBook Pixel</a>- a ridiculously pretty hunk of relatively decent hardware topped with a high-resolution capacitive touch display. </p>
 
-  <ul class="posts">
-<<<<<<< HEAD
-    
-      <li>
-        <span class="post-date">May 22, 2014</span>
-        <a class="post-link" href="/dev-environment/meta/2014/05/22/doctor-jekyll/">Surpise! Dr. Jekyll may have a dark side.</a>
-        
-        <!-- Case for when no excerpt is defined -->
-        
-      </li>
-    
-      <li>
-        <span class="post-date">May 21, 2014</span>
-        <a class="post-link" href="/dev-environment/tweaks/2014/05/21/eating-chromeos-with-crouton-on-top/">Eating Chrome OS with Crouton on Top</a>
-        
-        <!-- Case for when no excerpt is defined -->
-        
-      </li>
-    
-      <li>
-        <span class="post-date">May 16, 2014</span>
-        <a class="post-link" href="/jekyll/meta/2014/05/16/giving-jekyll-a-go/">Giving Jekyll a Go!</a>
-        
-        <!-- Case for when no excerpt is defined -->
-        
-      </li>
-    
-  </ul>
+<p><img src="http://jmalley.github.io/assets/pixel_large.jpg" alt="The Pixel is Very Pretty" /></p>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<p>There are a lot of <a href="http://gizmodo.com/5986031/every-reason-not-to-buy-the-google-chromebook-pixel">haters</a>. The Chrome OS is a relatively young system, with an interface that is delightfully simple for non-technical folk and perhaps disturbingly simple and locked-down for the more tech-inclined. Personally, I would be fine using it primarily as a web app and general surfing machine, were it not for the fact that I am taking this Back End Web Development class. Thankfully, there are a few methods for running linux on a ChromeBook, most of them created by Google employees.</p>
+
+<p>Because I’m a total noob, I opted for what most people online consider to be the simplest option: <a href="https://github.com/dnschneid/crouton">Crouton</a>. Rather than having to contend with some dual-boot malarky, crouton takes an ubuntu distro and nestles it adorably on top of the Chrome OS kernel, allowing 1-second switching between each OS. </p>
+
+<p>Admittedly, it took nearly 6 hours for me to set up the damn thing to work with the Pixel’s insanely high-res display, mostly due to me being new to ubuntu, but also because ubuntu support for high-res is spotty. I ended up going with this configuration:</p>
+
+<ul>
+  <li>Distro: Trusty. At the time of this writing it is the latest distro that crouton supports</li>
+  <li>Desktop environment: <a href="http://www.kubuntu.org/">KDE</a>. This guy was the only one I could find that looks half-way decent on the Pixel.</li>
+  <li>I had to create a startup script that sets the resolution to 1680x1120 because otherwise everything is far too tiny to see. This is actually courtesy of crouton:</li>
+</ul>
+
+<div class="highlight"><pre><code class="ruby"><span class="n">setres</span> <span class="mi">1680</span> <span class="mi">1120</span></code></pre></div>
+
+<ul>
+  <li>Font DPI is set to 124, and all system font sizes to 8 or 9.</li>
+</ul>
+
+<p>All in all its a little fiddly. Part of me is worried we will need to do something in class that is simply not supported in this kind of environment, but so far so good.</p>
+
+
+  </article>
 
 </div>
-
       </div>
     </div>
 
@@ -164,21 +155,3 @@ layout: default
 
     </body>
 </html>
-=======
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        {% if post.content contains '<!--more-->' %}
-          {{ post.content | split:'<!--more-->' | first }}
-        {% else %}
-        <!-- Case for when no excerpt is defined -->
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
->>>>>>> source

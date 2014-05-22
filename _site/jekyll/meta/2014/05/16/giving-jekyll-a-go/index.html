@@ -1,14 +1,13 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Half-Stack Development</title>
+    <title>Giving Jekyll a Go!</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="A comprehensive and obsessively-updated chronicle of my diminishing ignorance in web development.">
-    <link rel="canonical" href="http://jmalley.github.io/">
+    <link rel="canonical" href="http://jmalley.github.io/jekyll/meta/2014/05/16/giving-jekyll-a-go/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -52,50 +51,26 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div class="home">
-=======
----
-layout: default
----
+      <div class="post">
 
-<div class="home">
->>>>>>> source
+  <header class="post-header">
+    <h1>Giving Jekyll a Go!</h1>
+    <p class="meta">May 16, 2014</p>
+  </header>
 
-  <h1>Posts</h1>
+  <article class="post-content">
+  <p>I wouldn’t call myself a <em>slow</em> learner, but let’s just say I won’t be getting any speeding tickets on Skill Aquisition Highway. To help facilitate my education, I am forcing myself to blog about everything that I learn that is even remotely useful to me. While this effort began on tumblr, I found that my tumblr friends are not the right audience for endless techical epiphanies. They just can’t compete with the deluge of “heh”-inducing gifs.</p>
 
-  <ul class="posts">
-<<<<<<< HEAD
-    
-      <li>
-        <span class="post-date">May 22, 2014</span>
-        <a class="post-link" href="/dev-environment/meta/2014/05/22/doctor-jekyll/">Surpise! Dr. Jekyll may have a dark side.</a>
-        
-        <!-- Case for when no excerpt is defined -->
-        
-      </li>
-    
-      <li>
-        <span class="post-date">May 21, 2014</span>
-        <a class="post-link" href="/dev-environment/tweaks/2014/05/21/eating-chromeos-with-crouton-on-top/">Eating Chrome OS with Crouton on Top</a>
-        
-        <!-- Case for when no excerpt is defined -->
-        
-      </li>
-    
-      <li>
-        <span class="post-date">May 16, 2014</span>
-        <a class="post-link" href="/jekyll/meta/2014/05/16/giving-jekyll-a-go/">Giving Jekyll a Go!</a>
-        
-        <!-- Case for when no excerpt is defined -->
-        
-      </li>
-    
-  </ul>
+<p>Enter github pages and the <a href="http://jekyllrb.com">Jekyll blogging framework</a>. Switching to this method has the added benefit of teaching me something while I blog. Knowing <a href="http://daringfireball.net/projects/markdown/syntax">markdown</a> seems to be important, particularly in the github community, and forcing myself to use <a href="http://sass-lang.com/">Sass</a> here as i develop the layout is a skill that will help me at work. Perhaps most importantly, I am now going to be using git everyday, which seems like the best way to get comfortable with it.</p>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<div class="highlight"><pre><code class="ruby"><span class="k">def</span> <span class="nf">begin</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Off we go.&quot;</span>
+<span class="k">end</span></code></pre></div>
+
+
+  </article>
 
 </div>
-
       </div>
     </div>
 
@@ -164,21 +139,3 @@ layout: default
 
     </body>
 </html>
-=======
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        {% if post.content contains '<!--more-->' %}
-          {{ post.content | split:'<!--more-->' | first }}
-        {% else %}
-        <!-- Case for when no excerpt is defined -->
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
->>>>>>> source
