@@ -63,18 +63,11 @@
 
 <!-- more -->
 
-<p>The only issue I’ve had is understanding a smooth and consistent workflow. I’m using Github Pages, which basically wants to find all the site files in the <em>master</em> branch. To acheive this, I do all my editing and writing on a seperate branch called <em>source</em>. When I am ready to update the site:</p>
+<p>The only issue I’ve had is understanding a smooth and consistent workflow. I’m using Github Pages, which basically wants to find all the site files in the <em>master</em> branch. To acheive this, I do all my editing and writing on a seperate branch called <em>source</em>, where the Jekyll engine lives. Then when it’s time to publish changes, jekyll builds a static site and that gets sent to the master branch. This workflow took be a while to figure out, even after reading <a href="http://davidensinger.com/2013/04/deploying-jekyll-to-github-pages/">a well-written explanation</a>, and emailing the author of said explanation, David Ensinger. Following his setup, when I am ready to commit my changes I do:</p>
 
-<div class="highlight"><pre><code class="ruby"><span class="err">$</span> <span class="n">jekyll</span> <span class="n">build</span>
-<span class="err">$</span> <span class="n">git</span> <span class="n">add</span> <span class="o">--</span><span class="n">all</span>
-<span class="err">$</span> <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;I&#39;ve made great changes.&quot;</span>
-<span class="err">$</span> <span class="n">publish_website</span></code></pre></div>
+<div class="highlight"><pre><code class="ruby"><span class="n">rake</span> <span class="n">commit_deploy</span></code></pre></div>
 
-<p>That last little nugget is an alias I set up in .bashrc that fires off the following commands I <a href="http://davidensinger.com/2013/04/deploying-jekyll-to-github-pages/">found online</a> (it took me far too long to figure out I couldn’t chain together commands in gitconfig, and that this is the proper place to do it):</p>
-
-<div class="highlight"><pre><code class="ruby"><span class="k">alias</span> <span class="n">publish_website</span><span class="o">=</span><span class="s2">&quot;git push; git branch -D master; git checkout -b master; git filter-branch --subdirectory-filter _site/ -f; git checkout source; git push --all origin --force&quot;</span></code></pre></div>
-
-<p>The gist of it is that we want the master to contain the site files, while we want source to contain the jekyll engine and everything else. Is it <em>perfect</em>? No. The important thing is it works for now. In the future I will try to set up a <a href="http://davidensinger.com/2013/07/automating-jekyll-deployment-to-github-pages-with-rake/">rakefile for this</a>, but I’d like the wait until I know what a rakefile is.</p>
+<p>…which points to a rakefile that adds all untracked files and commits them with a timestamp, and then publishes the whole shebang. Ensinger’s <a href="http://davidensinger.com/2013/07/automating-jekyll-deployment-to-github-pages-with-rake/">rakefile</a> is particularly nifty as it minifies the jekyll build that gets sent to the master branch. I haven’t gotten that far yet…</p>
 
 
   </article>
