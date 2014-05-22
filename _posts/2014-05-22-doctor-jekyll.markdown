@@ -11,7 +11,7 @@ I really appreciate the theory behind [Jekyll][jekyll]. Rather than have to cont
 
 The only issue I've had is understanding a smooth and consistent workflow. I'm using Github Pages, which basically wants to find all the site files in the *master* branch. To acheive this, I do all my editing and writing on a seperate branch called *source*. When I am ready to update the site:
 
-{% highlight %}
+{% highlight ruby %}
 $ jekyll build
 $ git add --all
 $ git commit -m "I've made great changes."
@@ -20,11 +20,11 @@ $ publish_website
 
 That last little nugget is an alias I set up in .bashrc that fires off the following commands I [found online][deploy_steps] (it took me far too long to figure out I couldn't chain together commands in gitconfig, and that this is the proper place to do it):
 
-{% highlight %}
+{% highlight ruby %}
 
 alias publish_website="git push; git branch -D master; git checkout -b master; git filter-branch --subdirectory-filter _site/ -f; git checkout source; git push --all origin --force"
 
-{% endhighlight %}
+{% endhighlight ruby %}
 
 The gist of it is that we want the master to contain the site files, while we want source to contain the jekyll engine and everything else. Can you hear the silent screams of a million git purists? The important thing is it works for now. In the future I will try to set up a [rakefile for this][rakefile], but I'd like the wait until I know what a rakefile is.
 
