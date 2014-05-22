@@ -6,7 +6,7 @@ task :deploy do
   puts "\n## Creating new master branch and switching to it"
   status = system("git checkout -b master")
   puts status ? "Success" : "Failed"
-  puts "\n## Forcing the _site subdirectory to be project root"
+  puts "\n## Forcing the published_site subdirectory to be project root"
   status = system("git filter-branch --subdirectory-filter published_site/ -f")
   puts status ? "Success" : "Failed"
   puts "\n## Switching back to source branch"
