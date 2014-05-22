@@ -26,7 +26,7 @@ alias publish_website="git push; git branch -D master; git checkout -b master; g
 
 {% endhighlight ruby %}
 
-The gist of it is that we want the master to contain the site files, while we want source to contain the jekyll engine and everything else. Can you hear the silent screams of a million git purists? The important thing is it works for now. In the future I will try to set up a [rakefile for this][rakefile], but I'd like the wait until I know what a rakefile is.
+The gist of it is that we want the master to contain the site files, while we want source to contain the jekyll engine and everything else. Is it *perfect*? No. The important thing is it works for now. In the future I will try to set up a [rakefile for this][rakefile], but I'd like the wait until I know what a rakefile is.
 
 
 [jekyll]:    http://jekyllrb.com

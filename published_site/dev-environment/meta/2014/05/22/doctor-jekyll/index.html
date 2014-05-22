@@ -74,7 +74,7 @@
 
 <div class="highlight"><pre><code class="ruby"><span class="k">alias</span> <span class="n">publish_website</span><span class="o">=</span><span class="s2">&quot;git push; git branch -D master; git checkout -b master; git filter-branch --subdirectory-filter _site/ -f; git checkout source; git push --all origin --force&quot;</span></code></pre></div>
 
-<p>The gist of it is that we want the master to contain the site files, while we want source to contain the jekyll engine and everything else. Can you hear the silent screams of a million git purists? The important thing is it works for now. In the future I will try to set up a <a href="http://davidensinger.com/2013/07/automating-jekyll-deployment-to-github-pages-with-rake/">rakefile for this</a>, but I’d like the wait until I know what a rakefile is.</p>
+<p>The gist of it is that we want the master to contain the site files, while we want source to contain the jekyll engine and everything else. Is it <em>perfect</em>? No. The important thing is it works for now. In the future I will try to set up a <a href="http://davidensinger.com/2013/07/automating-jekyll-deployment-to-github-pages-with-rake/">rakefile for this</a>, but I’d like the wait until I know what a rakefile is.</p>
 
 
   </article>
