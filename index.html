@@ -13,9 +13,9 @@ layout: default
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <article>
         {% if post.content contains '<!--more-->' %}
-          {{ post.content | split:'<!--more-->' | first }}
+          {{ post.content | split:'<!--more-->' | first }} &nbsp; <a href="{{ post.url | prepend: site.baseurl }}" style="float: right">Read on...</a>
         {% else %}
-        <!-- Case for when no excerpt is defined -->
+          <a href="{{ post.url | prepend: site.baseurl }}" style="float: right">Read me, bro.</a>
         {% endif %}
         </article>
       </li>
