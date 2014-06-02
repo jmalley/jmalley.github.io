@@ -9,14 +9,14 @@
 html, body { height: 100%; }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 400;
   background-color: #fdfdfd;
 }
 
-h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 700; }
 
 a         { color: #2a7ae2; text-decoration: none; }
 a:hover   { color: #000; text-decoration: underline; }
@@ -40,7 +40,7 @@ article.excerpt{
   margin-top: 15px;
 }
 
-article.post-content p:first-child:first-letter {
+/*article.post-content p:first-child:first-letter {
     text-transform: uppercase;
     font-size: 42px;
     font-style: italic;
@@ -51,7 +51,7 @@ article.post-content p:first-child:first-letter {
     line-height: 32px;
     height: 32px;
     font-family: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
-}
+} */
 
 /* Layout Styles */
 /* ----------------------------------------------------------*/
@@ -172,6 +172,7 @@ article.post-content p:first-child:first-letter {
   font-size: 24px;
   letter-spacing: -1px;
   line-height: 1;
+  font-size: 42px;
 }
 
 .posts .post-date {
