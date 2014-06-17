@@ -4,11 +4,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Barely Avoiding Disaster</title>
+    <title>The Midterm</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="A comprehensive and obsessively-updated chronicle of my diminishing ignorance in web development.">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-    <link rel="canonical" href="http://jmalley.github.io/crouton/chromebook/2014/06/02/barely-avoiding-disaster/">
+    <link rel="canonical" href="http://jmalley.github.io/learning/ruby/2014/06/04/the-midterm/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -55,40 +55,23 @@
       <div class="post">
 
   <header class="post-header">
-    <h1>Barely Avoiding Disaster</h1>
-    <p class="meta">Jun 2, 2014</p>
+    <h1>The Midterm</h1>
+    <p class="meta">Jun 4, 2014</p>
   </header>
 
   <article class="post-content">
-  <p><em>EDIT: What follows is no longer my setup. I had too much trouble making working parmissions persist on the SD card. I am again running the chroot from the internal SSD for the time being, and making regular backups.</em></p>
-
-<p>Improving your computer skills these days is generally a safe proposition. Despite understandable hesitation to meddle by the non-computer-savvy, the walled gardens of modern operating systems allow us to tinker and play, without much fear of blowing up our computers. Things do get pretty dicey, however, when you make your first foray into tweaking permissions for a drive or partition. Such was the risk when I attempted to set up nano (a command line text editor), in chromeos, and pretty much converted my chromebook into a gorgeous brick.
+  <p>I started this confounded log to record my learnings, so I should probably write something about that, rather than my struggles with setting up workflows and environments. I suppose those are equally important, but my class is about Ruby on Rails. We have just finished 5 weeks on Ruby, and were tasked with writing a CLI app that takes in some json from an open api and does something with it. Simple and open-ended.
 <!--more-->
-Thankfully, my setup is very forgiving as far as horrible disasters go. Just an hour before my blunder I had moved my ubuntu install to an SD card (thank the lord). And as for the rest of the machine, a quick powerwash did the trick. As uncomfortable as we all are with the idea of an OS that lives primarily in the cloud, it makes restoring your device a lot easier. </p>
+The scope of the project is as follows:</p>
 
-<p>If I hadn’t moved the ubuntu chroot off the internal SSD, then I would have had a real problem. Here’s what I had to do to set up crouton on the SD card. This assumes you already have a working ubuntu chroot on your internal SSD.</p>
 <ol>
-<li> Insert the SD card while in chromeos. Unmount it by clicking on the little 'eject' symbol. </li>
-<li> Enter your chroot and open the partition manager (I use the KDE equivalent). Format the SD card in ext4.</li>
-<li> Close your chroot and remount the SD card.</li>
-<li> Move your chroot. It's important that it goes in a new "chroots" dir.
- 
-<div class="highlight"><pre><code class="bash">sudo edit-chroot chrootname -m /media/removable/SD-Card/chroots/</code></pre></div>
-</li>
-<li> Download crouton, and let it know where the chroots are by default
- 
-<div class="highlight"><pre><code class="bash">sudo sh -e ~/Downloads/crouton -p /media/removable/SD-Card -u</code></pre></div>
-</li>
-<li> Start chroot with
- 
-<div class="highlight"><pre><code class="bash">sudo sh /media/removable/SD-Card/bin/startkde</code></pre></div>
-</li>
- </ol>
+  <li>User types in the name of a city.</li>
+  <li>Program uses openweathermap.org API to find current weather conditions for that city.</li>
+  <li>Print to console the conditions, and if the specific weather condition is recognized, print out some ASCII art of the weather.</li>
+  <li>User is asked if they want to exit or try another city.</li>
+</ol>
 
-<p>It is <a href="http://tomwwolf.com/chromebook-14-compedium/chromebook-crouton-cookbook/">much easier</a> to start from scratch with an SD, rather than move an existing chroot onto it. </p>
-
-<p>EDIT: I should note that running the chroot off the SD card came with its own set of problems. Performance seems to be the same, but I had to wrestle some permissions issues again to get it to work completely, including adding my username to the ‘root’ group. Beyond that, so far so good. An added benefit is that if I (or someone) accidentally turns off developer mode on my Pixel, wiping everything, I will still have my chroot in a safe place.</p>
-
+<p>One thing at a time. </p>
 
   </article>
 

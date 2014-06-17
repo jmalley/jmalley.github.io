@@ -5,6 +5,8 @@ date:   2014-06-02 10:39
 categories: crouton chromebook
 ---
 
+*EDIT: What follows is no longer my setup. I had too much trouble making working parmissions persist on the SD card. I am again running the chroot from the internal SSD for the time being, and making regular backups.*
+
 Improving your computer skills these days is generally a safe proposition. Despite understandable hesitation to meddle by the non-computer-savvy, the walled gardens of modern operating systems allow us to tinker and play, without much fear of blowing up our computers. Things do get pretty dicey, however, when you make your first foray into tweaking permissions for a drive or partition. Such was the risk when I attempted to set up nano (a command line text editor), in chromeos, and pretty much converted my chromebook into a gorgeous brick.
 <!--more-->
 Thankfully, my setup is very forgiving as far as horrible disasters go. Just an hour before my blunder I had moved my ubuntu install to an SD card (thank the lord). And as for the rest of the machine, a quick powerwash did the trick. As uncomfortable as we all are with the idea of an OS that lives primarily in the cloud, it makes restoring your device a lot easier. 
@@ -29,5 +31,7 @@ If I hadn't moved the ubuntu chroot off the internal SSD, then I would have had 
  </ol>
 
 It is [much easier][cookbook] to start from scratch with an SD, rather than move an existing chroot onto it. 
+
+EDIT: I should note that running the chroot off the SD card came with its own set of problems. Performance seems to be the same, but I had to wrestle some permissions issues again to get it to work completely, including adding my username to the 'root' group. Beyond that, so far so good. An added benefit is that if I (or someone) accidentally turns off developer mode on my Pixel, wiping everything, I will still have my chroot in a safe place.
 
 [cookbook]: http://tomwwolf.com/chromebook-14-compedium/chromebook-crouton-cookbook/
