@@ -60,7 +60,8 @@
   </header>
 
   <article class="post-content">
-  <p>I made a basic mistake today that eluded me for way too long. I have a list of movies, with a search field at the top. When I try to search for something, the page would refresh but look exactly the same. No errors, but the list of movies did not change to one that matched my search term. The bug would be obvious to someone more experienced, but I didn’t find it until after hours of inspecting, tweaking, and testing various aspects of my controllers and routes. Here’s the bug:</p>
+  <p>I made a basic mistake today that eluded me for way too long. I have a list of movies, with a search field at the top. When I try to search for something, the page would refresh but look exactly the same. No errors, but the list of movies did not change to one that matched my search term. The bug would be obvious to someone more experienced, but I didn’t find it until after hours of inspecting, tweaking, and testing various aspects of my controllers and routes. Here’s the bug:
+<!--more--></p>
 
 <div class="highlight"><pre><code class="ruby"><span class="o">&lt;</span><span class="sx">% Movie.all.each </span><span class="k">do</span> <span class="o">|</span><span class="n">movie</span><span class="o">|</span> <span class="sx">%&gt;</span>
 <span class="sx">  &lt;h3&gt;</span><span class="o">&lt;</span><span class="n">em</span><span class="o">&gt;&lt;</span><span class="sx">%= movie.title %&gt;&lt;/em&gt; (&lt;%=</span> <span class="n">movie</span><span class="o">.</span><span class="n">year_released</span><span class="o">.</span><span class="n">to_s</span> <span class="sx">%&gt;)&lt;/h3&gt;</span>

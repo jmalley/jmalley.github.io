@@ -6,7 +6,7 @@ categories: learning rails
 ---
 
 I made a basic mistake today that eluded me for way too long. I have a list of movies, with a search field at the top. When I try to search for something, the page would refresh but look exactly the same. No errors, but the list of movies did not change to one that matched my search term. The bug would be obvious to someone more experienced, but I didn't find it until after hours of inspecting, tweaking, and testing various aspects of my controllers and routes. Here's the bug:
-
+<!--more-->
 {% highlight ruby %}
 <% Movie.all.each do |movie| %>
   <h3><em><%= movie.title %></em> (<%= movie.year_released.to_s %>)</h3>
